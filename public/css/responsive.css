@@ -1,0 +1,463 @@
+/*タブレット用*/
+
+@media(max-width: 1023px){
+	/*全体*/
+
+	.container {
+		width: 615px;
+		padding-top: 60px;
+	}
+
+	.container-title {
+		font-size: 25px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.explanation-text {
+		font-size: 13px;
+		text-align: left;
+	}
+
+	/*parallax*/
+
+	.parallax-copyright {
+		font-size: 13px;
+		opacity: 0.7;
+		letter-spacing: 0.25em;
+	}
+
+	/*header*/
+	.header-copyright, .header-copyright2 {
+		font-size: 10px;
+	}
+
+	.logo {
+		width: 150px;
+		height: 70px;
+		background-size: 80px 35.55px;
+	}
+
+	/*nav bar*/
+
+	.nav-container {
+		width: 96%;
+		height: 50px;
+	}
+
+	.nav-container h1 {
+		width: 20%;
+		font-size: 18px;
+		line-height: 50px;
+	}
+	.nav-container ul {
+		width: 80%;
+		padding-left: 8%;
+	}
+	.nav-container li {
+		font-size: 12px;
+		line-height: 50px;
+	}
+
+	/*general*/
+
+
+	/*culture*/
+
+	.culture-item h3 {
+		padding-top: 0;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+
+	.culture-item p {
+		font-size: 11px;
+	}
+
+	/*nature*/
+	.naturePhotoLeft {
+		width: 55%;
+		padding-right: 10%;
+	}
+
+	.naturePhotoRight {
+		width: 45%;
+	}
+
+	.leftMiddle, .rightMiddle {
+		margin:  35px 0;
+	}
+
+	.naturePhoto {
+		width: 100%;
+		box-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+	}
+
+	.naturePhoto:active {
+		box-shadow: 0 0 3px 2px yellow;
+	}
+
+	.natureMap {
+		display: none;	
+	}
+
+	.natureMap img {
+		display: none;
+	}
+
+	.fa-flag::before {
+		display: none;
+	}
+
+	.modal {
+		width: 85%;
+		height: 75%;
+	}
+
+	/*food*/
+	
+	.foodPhotos {
+		width: 525px;
+		margin: 0 auto;
+		padding: 50px auto;
+	}
+
+	.food {
+		border-radius: 50%;
+		margin-right: 0;
+	}
+
+	.food:nth-child(odd) {
+		margin-right: 25px;
+	}
+
+	.food:nth-child(n+5){
+		margin-bottom: 0;
+	}
+
+	/*access*/
+	.contentsLeft {
+		padding-right: 20px;
+	}
+
+	.route {
+		padding: 0 20px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.route span {
+		padding: 14px 0;
+	}
+	
+
+
+/*スマートフォン用*/
+
+@media(max-width: 639px){
+	/*全体*/
+	.container {
+		width: 85%;
+		padding-top: 50px;
+	}
+
+	.explanation-title {
+		font-size: 24px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+
+	.explanation-text {
+		font-size: 14px;
+		line-height: 23px;
+	}
+
+	/*header*/
+	.swiper-container {
+		height: 50vh;
+		margin-top: 40px;
+	}
+
+	.header-copyright, .header-copyright2 {
+		position: absolute;
+		right: 1%;
+		top: 1%;
+		font-size: 8px;
+		letter-spacing: 0.05em;
+	}
+
+	.header-copyright2 {
+		letter-spacing: 0.02em;
+	}
+
+	.logo {
+		width: 90px;
+		height: 40px;
+		background-size: 70px 31.1px;
+	}
+
+	/*nav bar*/
+	.nav-wrapper {
+		position: fixed;
+		top: 0px;
+		z-index: 100;
+	}
+
+	.fff {
+		margin-top:0;
+	}
+
+	.nav-container {
+		height: 40px;
+		width: 80%;
+	}
+
+	.nav-container h1 {
+		line-height: 40px;
+		width: calc(100% - 25px);
+	}
+
+	.nav-container ul {
+		display: none;
+	}
+
+	#navToggle {
+		display:block;
+	}
+
+	/*parallax*/
+	.parallax-window {
+	    min-height: 200px;
+	}
+
+	.parallax-copyright {
+		bottom: 3px;
+		right: 3px;
+		font-size: 10px;
+		letter-spacing: 0.05em;
+	}
+	
+	/*general*/
+
+	.festival,.map {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.festival {
+		padding: 30px 0;
+	}
+
+	.map {
+		padding: 0 0 30px;
+	}
+
+	/*culture*/
+	.culture-item {
+		padding-top: 30px;
+		padding-bottom: 35px;
+		line-height: 24px;
+	}
+
+	.kinzan-box, .noh-box, .shukunegi-box, .kinzanPhoto, .nohPhoto, .shukunegiPhoto {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.kinzanPhoto, .nohPhoto, .shukunegiPhoto {
+		display: block;
+		width: 75%;
+		padding: 20px 0 0 0;
+	}
+
+	/*nature*/
+
+	.nature-contents {
+		padding: 30px 0;
+	}
+
+	.naturePhotoLeft {
+		width: 55%;
+		padding-right: 10%;
+	}
+
+	.naturePhotoRight {
+		width: 45%;
+	}
+
+	.leftMiddle, .rightMiddle {
+		margin:  25px 0;
+	}
+
+	.naturePhoto {
+		width: 100%;
+		box-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+	}
+
+	.naturePhoto:active {
+		box-shadow: 0 0 3px 2px yellow;
+	}
+
+	.natureMap {
+		display: none;	
+	}
+
+	.natureMap img {
+		display: none;
+	}
+
+	.fa-flag::before {
+		display: none;
+	}
+
+	.nature-modal-wrapper {
+		background-color: rgba(0,0,0,0.9);
+	}
+
+	.modal {
+		width: 95%;
+		height: 40%;
+		position: static;
+	}
+
+	.modal-text {
+		display: none;
+	}
+
+	.smart-name, .smart-explanation {
+		display: block;
+	}
+
+	.fa-times {
+		display: none;
+	}
+
+	.times-smart {
+		display: block;
+		position: absolute;
+		right: 3%;
+		bottom: 100%;
+		margin: auto;
+	}
+
+	.fa-flag::before {
+		display: none;
+	}
+
+	/*food*/
+	.foodPhotos {
+		width: 250px;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+
+	.food {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.food:nth-child(n+4){
+		margin-bottom: 20px;
+	}
+
+	.food:nth-child(6){
+		margin-bottom: 0;
+	}
+
+	/*access*/
+	.contentsLeft {
+		float: none;
+		width: 100%;
+		padding-top: 30px;
+		padding-right: 0;
+	}
+
+	.route {
+		margin-top: 30px;
+		padding-left: 5%;
+		border-radius: 3px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+
+	.route:active {
+		color: #41c991;
+	}
+
+	.route span {
+		padding: 18px 0;
+	}
+
+	.contentsRight {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		padding-top: 30px;
+	}
+
+	.access-map {
+		width: 95%;
+		padding-bottom: 35px;
+	}
+
+	.link {
+		padding-bottom: 35px;
+	}
+
+	/*question*/
+	.question-left {
+		float: none;
+		width: 100%;
+	}
+
+	.form {
+		float: none;
+		width: 100%;
+		padding: 30px 0 35px;
+	}
+
+	.formItem {
+		margin-top: 20px;
+	}
+
+	.formItem:nth-child(1){
+		margin-top: 0;
+	}
+
+	input, textarea {
+		width: 90%;
+	}
+
+	.btn {
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.btn div {
+		padding: 3.5px 10px;
+	}
+
+	.submit {
+		margin-right: 20px;
+	}
+
+	/*footer*/
+
+	#footer {
+		min-height: 150px;
+	}
+	.footer-container {
+		line-height: 150px;
+		text-align: center;
+		font-size: 10px;
+		letter-spacing: 0.05em;
+	}
+
+
+}
