@@ -1,0 +1,874 @@
+@charset "UTF-8";
+
+/*--------------ページ全体に共通して反映--------------*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'ヒラギノ明朝 Pro W6', serif;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	color: #0f197c;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	background-image: url("../tinified2/tesukiwashi-pattern-08.jpg");
+	background-size: 300px;
+	background-position: center;
+}
+
+.container {
+	width: 674px;
+	padding-top: 65px;
+	margin: 0 auto;
+	color: #4c4949;
+}
+
+.explanation-title {
+	font-size: 32px;
+	padding-bottom: 30px;
+}
+
+.explanation-text {
+	font-size: 16px;
+	line-height: 35px;
+}
+
+.clear {
+	clear: both;
+}
+
+/*---------------------Swiper-----------------------*/
+
+.swiper-container {
+	width: 100%;
+	height: 100vh;
+}
+
+.swiper-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	background-size: cover;
+	background-position: 50% 90%;
+}
+
+.slide0 {
+	background-image: url(../tinified/oshikawa4.png);
+	/*background-color: red;*/
+}
+
+.slide1 {
+	background-image: url(../tinified/oshikawa1.jpg);
+	/*background-color: orange;*/
+}
+
+.slide2 {
+	background-image: url(../tinified/oshikawa2.png);
+	/*background-color: yellow;*/
+}
+
+.slide3 {
+	background-image: url(../tinified/oshikawa3.png);
+	/*background-color: green;*/
+}
+
+.slide4 {
+	background-image: url(../tinified/oshikawa0.png);
+	/*background-color: blue;*/
+}
+.header-copyright {
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	color: #fff;
+	font-size: 15px;
+	opacity: 0.7;
+	letter-spacing: 0.4em;
+}
+.header-copyright2 {
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	color: #fff;
+	font-size: 15px;
+	opacity: 0.7;
+	letter-spacing: 0.2em;
+}
+
+.logo {
+	width: 190px;
+	height: 90px;
+	background-image: url("../img/sado-logo2.png");
+	background-color: rgba(255,255,255,0.4);
+	background-size: 100px 44.4px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 2%;
+	left:2%;
+	margin: auto;
+	z-index: 80;
+}
+
+/*-------------------Parallax-----------------------*/
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+    background-size: cover;
+    background-position: 50% 70%;
+    position: relative;
+}
+
+.parallax-copyright {
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	color: #fff;
+	font-size: 15px;
+	opacity: 0.7;
+	letter-spacing: 0.3em;
+}
+
+/*  ---------------nav----------------------*/
+.nav-wrapper {
+	width: 100%;
+	background-image: url(../tinified2/japanese-paper1.jpg);
+	background-size: 500px;
+	background-position: center;
+	box-shadow: 0px 1px 4px 0px #646464;
+	position: relative;		/*	backgroundにimageやcolorを指定しているときにはbox-shadowが効かないことがある。position: relative;にすると効く。*/
+}
+
+.nav-container {
+	height: 60px;
+	width: 80%;
+	margin: 0 auto;	/*paddingは後で厄介なので、containerを使って２層に分けて内側層にwidthを設定することで両サイド端を開けることが可能。*/
+}
+
+.fixed {
+	position: fixed;
+	top: 0px;
+	box-shadow: 0px 1px 4px 0px #646464;
+	z-index: 90;
+}
+
+.fff{
+	margin-top: 60px; 
+}
+
+.nav-container h1 {
+	float: left;
+	color: #0f197c;
+	line-height: 60px;
+	width: 25%;
+	font-size: 22px;
+}
+
+.nav-container ul {
+	float: right;
+	width: 75%;
+	padding-left: 5%;
+}
+
+.nav-container li {
+	float: left;            /* liにfloat:right;を掛けると最初のliから右詰めになるので、ulにfloat:right;を掛けてliにfloat:left;word-spacing:かける*/
+	display: inline-block;
+	color: #070e53;
+	list-style-type: none;
+	width: 14%;
+	text-align: center;
+	line-height: 60px;		/*line-heightをheader barの高さと同じにすると、一瞬でliがheader barの水平中央に並ぶ*/
+	font-size: 15px;
+	transition: color 0.2s linear;
+}
+
+.nav-container li:hover {
+	cursor: pointer;
+	color: #41c991;
+}
+
+/*nav toggle*/
+
+#navToggle {
+    display:none; 
+    float: right;
+    cursor:pointer;
+    line-height: 40px;
+    width: 25px;
+    height: 40px;
+    position: relative;
+}
+
+#navToggle span {
+    display:block;
+    position:absolute; 
+    width:100%;
+    border-bottom:solid 2px #0f197c;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+
+#navToggle span:nth-child(1) {
+	top:28%;
+}
+
+#navToggle span:nth-child(2) {
+	top:50%;
+}
+
+#navToggle span:nth-child(3) {
+	top:72%;
+}
+
+.active1 {
+	-webkit-transform: rotate(315deg);
+	transform: rotate(315deg) translateY(3.5px) translateX(-9px);
+}
+
+.active2 {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg) ;
+	opacity: 0;
+}
+
+.active3 {
+	-webkit-transform: rotate(405deg);
+	transform: rotate(405deg) translateY(-4px) translateX(-9px);
+	}
+
+.navToggleList {
+	width: 100%;
+	background-color: #0f197c;
+	display: none;
+	box-shadow: 0px 1px 4px 0px #646464;
+}
+
+.navToggleList ul {
+	float: none;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.navToggleList li {
+	color: #fff;
+	text-align: center;
+	line-height: 41px;
+	display: block;
+	border-bottom: 1px dotted rgba(255,255,255,0.4);
+}
+
+.navToggleList li:active {
+	color: #41c991;
+}
+
+.border {
+	border-bottom: 0 !important;
+}
+
+.open {
+	display: block;
+	position: absolute;
+	top: 40px;
+}
+
+/*------------------------概要---------------------------*/
+
+.festival {
+	width: 50%;
+	float: left;
+	padding: 70px 0 40px;
+}
+
+.map {
+	width: 48%;
+	float: left;
+	padding: 10px 0 30px;
+}
+
+/*-----------------------文化-------------------------*/
+
+.culture-item {
+	width: 100%;
+	display: inline-block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	line-height: 26px;
+}
+
+.culture-item:nth-child(n+3) {
+	border-top: 2px dotted #7d4d19;
+}
+
+.kinzan-box, .kinzanPhoto, .shukunegi-box, .shukunegiPhoto {
+	width: 50%;
+	float: left;
+}
+
+.noh-box, .nohPhoto {
+	width: 48%;
+	float: right;
+}
+
+.culture-item h3 {
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.culture-item p {
+	font-size: 13px;
+}
+
+.kinzanPhoto, .shukunegiPhoto {
+	padding-left: 15px;
+}
+
+.nohPhoto {
+	margin-right: 15px;
+}
+
+/*-----------------------自然--------------------------*/
+.click-here {
+	text-align: center;
+	display:block;
+	padding:10px;
+	color: #000;
+	text-decoration:none;
+	margin: 40px auto 0;
+
+	/*アニメーション*/
+	animation: animScale 2s infinite ease-out;
+	transform-origin: 50% 50%;
+	animation-play-state:running;
+}
+
+@keyframes animScale {
+	0% { transform: scale(0.8, 0.8); }
+	10% { transform: scale(1.2, 1.2); }
+	25% { transform: scale(1, 1); }
+	35% { transform: scale(1.1, 1.1); }
+	70% { transform: scale(1, 1); }
+	100% { transform: scale(1, 1); }
+}
+
+
+.nature-contents {
+	padding: 50px 0;
+}
+
+.item {
+	float: left;
+}
+
+.naturePhoto {
+	width: 209px;
+	display: block;
+	box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+}
+
+.leftMiddle, .rightMiddle {
+	margin: 17px 0;
+}
+
+.naturePhoto:hover {
+	box-shadow: 0 0 4px 3px yellow;
+	cursor: pointer;
+}
+
+.natureMap {
+	width: 254px;
+	height: 449px;
+	position: relative;
+}
+
+.natureMap img {
+	width: 254px;
+	padding: 9px;
+}
+
+.fa-flag {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #fba30a;
+	position: absolute;
+}
+
+.bound { 
+	animation: bound 1.5s linear;
+}
+
+@keyframes bound {
+    0% {transform: translateY(0);}
+    20% {transform: translateY(-33px;);}
+    40% {transform: translateY(0);}
+    55% {transform: translateY(-22px);}
+    70% {transform: translateY(0);}
+    80% {transform: translateY(-18px);}
+    90% {transform: translateY(0);}
+    95% {transform: translateY(-8px);}
+    100%{transform: translateY(0);}
+}
+
+.fa1 {
+	top: 100px;
+	left: 143px;
+}
+
+.fa2 {
+	top: 305px;
+	left: 156px;
+}
+.fa3 {
+	top: 395px;
+	left: 50px;
+}
+
+.fa4 {
+	top: 1px;
+	left: 170px;
+}
+
+.fa5 {
+	top: 225px;
+	left: 145px;
+}
+
+.fa6 {
+	top: 290px;
+	left: 180px;
+}
+
+.nature-modal-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 100;
+	display: none;
+}
+
+.modal {
+	width: 900px;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.modal-leftTop {
+	background-image: url("../tinified3/sugi.png");
+}
+
+.modal-leftMiddle {
+	background-image: url("../tinified3/momijiyama.png");
+}
+
+.modal-leftBottom {
+	background-image: url("../tinified3/yajima-kyojima.png");
+}
+
+.modal-rightTop {
+	background-image: url("../tinified3/kanzou.png");
+}
+
+.modal-rightMiddle {
+	background-image: url("../tinified3/toki.png");
+}
+
+.modal-rightBottom {
+	background-image: url("../tinified3/tanada.png");
+}
+
+.modal-text {
+	width: 250px;
+	height: 160px;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	border-radius: 10px;
+	color: white;
+	opacity: 0.8;
+	padding: 10px;
+}
+
+.modal-text-leftTop {
+	bottom: 0.8%;
+	right: 0.8%;
+}
+
+.modal-text-leftMiddle {
+	bottom: 0.8%;
+	left: 0.8%;
+}
+
+.modal-text-leftBottom {
+	bottom: 0.8%;
+	right: 0.8%;
+}
+
+.modal-text-rightTop {
+	top: 0.8%;
+	left: 0.8%;
+}
+
+.modal-text-rightMiddle {
+	top: 0.8%;
+	right: 0.8%;
+}
+
+.modal-text-rightBottom {
+	top: 0.8%;
+	right: 0.8%;
+}
+
+.modal-text h3 {
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+.modal-text p {
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+
+.smart-name {
+	text-align: center;
+	color: #fff;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: normal;
+	position: relative;
+}
+
+.smart-explanation {
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	width: 80%;
+	margin: 40px auto 0;
+}
+
+.smart-name, .smart-explanation {
+	display: none;
+}
+
+.fa-times {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.times-smart {
+	display: none;
+}
+
+/*------------------------食--------------------------*/
+
+.foodPhotos {
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.food {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	box-shadow: 0 0 7px 5px rgba(0,0,0,0.3) inset;
+	background-position: center;
+	background-size: contain;
+	overflow: hidden;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.food:nth-child(3n) {
+	margin-right: 0;
+}
+
+.food:nth-child(n+4){
+	margin-bottom: 0;
+}
+
+.food:hover {
+	cursor: pointer;
+}
+
+.igoneri {
+	background-image: url("../tinified3/igoneri-round.png");
+}
+
+.okesakaki {
+	background-image: url("../tinified3/okesakaki-round.png");
+}
+
+.sake {
+	background-image: url("../tinified3/sake-round.png");
+}
+
+.burikatsu {
+	background-image: url("../tinified3/burikatsu-round.png");
+}
+
+.kani {
+	background-image: url("../tinified3/kani-round.png");
+}
+
+.sea-kaki {
+	background-image: url("../tinified3/kaki-round.png");
+}
+
+.mask {
+	display: none;
+	background-color: rgba(10,35,40,0.9);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-weight: normal;	
+}
+
+.mask-igoneri {
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.mask-okesakaki {
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.mask-sake {
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.mask-burikatsu {
+	padding-top: 28px;
+	padding-bottom: 15px;
+}
+
+.mask-kani {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.mask-sea-kaki {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.mask h3 {
+	font-size: 16px;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.mask p {
+	font-size: 12px;
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+}
+
+/*-----------------------アクセス-----------------------*/
+
+.contentsLeft {
+	text-align: center;
+	float: left;
+	width: 50%;
+	padding-top: 60px;
+	padding-right: 35px;
+	font-size: 13px;
+	color: #0f197c;
+}
+
+.contentsLeft h3 {
+	display: inline-block;
+	border-bottom: 1px dotted #4c4949;
+}
+
+.route {
+	margin-top: 10%;
+	padding-left: 40px;
+	background-color: #c1e9f2;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: left;
+	height: 45px;
+	line-height: 45px;
+	transition: color 0.2s linear;
+}
+
+.route span {
+	float: right;
+	padding: 15px;
+}
+
+.route:hover {
+	color: #41c991;
+}
+
+.time-table {
+	padding: 3%;
+	background-color: #fff;
+	text-align: center;
+	height: 200px;
+	display: none;
+	width: 100%;
+	background-color: rgba(193,233,242,0.4);
+}
+
+.time-table-akadomari, .time-table-ogi {
+	height: 100px;
+}
+
+table {
+	border: 1px solid #0f197c;
+	border-collapse: collapse;
+	height: 100%;
+	width: 100%;
+}
+
+.ryotsu-jet {
+	height: 84%;
+}
+
+.akadomari, .ogi {
+	height: 100%;
+}
+
+.special-schedule {
+	text-align: left;
+}
+
+.fa-chevron-circle-down.rotate {
+    transform: rotate(180deg);
+}
+
+.contentsRight {
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding-top: 70px;
+}
+
+.access-map {
+	width: 100%;
+	padding-bottom: 80px;
+}
+
+.link {
+	width: 65%;
+	cursor: pointer;
+	padding-bottom: 70px;
+}
+
+/*---------------------お問い合わせ----------------------*/
+
+.question-wrapper {
+	background-image: url(../tinified2/japanese-paper3.jpg);
+}
+
+.question-left {
+	float: left;
+	width: 50%;
+}
+
+.question-left h2, .question-left p {
+	color: #fff;
+}
+
+.form {
+	float:left;
+	width: 50%;
+	padding: 0 0 50px;
+}
+
+.formItem {
+	margin-top: 20px;
+}
+
+input, textarea {
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: #064615;
+}
+
+.btn div {
+	padding: 3.5px 10px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #9eefb1;
+	box-shadow: 0 2px #3a6244;
+}
+
+.btn div:hover {
+	cursor: pointer;
+}
+
+.btn div:active {
+	box-shadow: none;
+	position: relative;
+	top: 2px;
+}
+
+.submit {
+	margin-right: 30px;
+}
+
+/*  -----------------------フッター ---------------------------*/
+
+#footer {
+	min-height: 250px;
+}
+.footer-container {
+	line-height: 250px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	opacity: 0.7;
+	letter-spacing: 0.3em;
+}

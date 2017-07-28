@@ -1,10 +1,453 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<title>watanabe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1>
+	<title>佐渡島観光サイト</title>
+	<link rel="shortcut icon" href="img/nature-map4.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
-	<p>見れたかな？</p>
+	<div class="overflow-hidden">
+		<header id="header" class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide0">
+					<p class="header-copyright2">©  2016  Tsuyoshi  Oshikawa  at  Earth Celebration</p>
+				</div>
+				<div class="swiper-slide slide1">
+					<p class="header-copyright">©  2016  Tsuyoshi  Oshikawa</p>
+				</div>
+				<div class="swiper-slide slide2">
+					<p class="header-copyright">©  2016  Tsuyoshi  Oshikawa</p>
+				</div>
+				<div class="swiper-slide slide3">
+					<p class="header-copyright">©  2016  Tsuyoshi  Oshikawa</p>
+				</div>
+				<div class="swiper-slide slide4">
+					<p class="header-copyright">©  2016  Tsuyoshi  Oshikawa</p>
+				</div>
+			</div>
+			<div class="logo"></div>
+			<div class="swiper-pagination"></div>
+		</header>
+		<nav class="nav-wrapper">
+			<section class="nav-container">
+				<h1>ようこそ佐渡へ</h1>
+				<div id="navToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul>
+					<a href="#top" class="jump"><li>トップへ</li></a>
+					<a href="#general" class="jump"><li>概要</li></a>
+					<a href="#culture" class="jump"><li>文化</li></a>
+					<a href="#nature" class="jump"><li>自然</li></a>
+					<a href="#food" class="jump"><li>食</li></a>
+					<a href="#access" class="jump"><li>アクセス</li></a>
+					<a href="#question" class="jump"><li>お問い合わせ</li></a>
+				</ul>
+			</section>
+			<div class="navToggleList">
+				<ul>
+					<a href="#top" class="jump"><li>トップへ</li></a>
+					<a href="#general" class="jump"><li>概要</li></a>
+					<a href="#culture" class="jump"><li>文化</li></a>
+					<a href="#nature" class="jump"><li>自然</li></a>
+					<a href="#food" class="jump"><li>食</li></a>
+					<a href="#access" class="jump"><li>アクセス</li></a>
+					<a href="#question" class="jump"><li class="border">お問い合わせ</li></a>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<div id="general" class="wrapper">
+				<section class="container explanation">
+					<h2 class="explanation-title">佐渡へこいっちゃ</h2>
+					<p class="explanation-text">佐渡島は日本海に浮かぶ新潟県の島であり、人口は約5万7000人、面積は東京23区よりも大きく、日本の島の中では沖縄本島に次いで2番目に大きい島です。江戸から明治にかけて金の採掘で栄えた佐渡金山は、現在では言わずと知れた佐渡の名所となっています。しかし金山のみならず、古来から育まれ受け継がれてきた豊かな文化が佐渡には存在し、人々の生活に根付いています。島の人から「おんでこ」と呼ばれる鬼太鼓は佐渡の春の風物詩。魔除けの鬼が太鼓を叩いて家々を回り、商売繁盛、五穀豊穣を祈願します。また、江戸時代に島民の間に広まった能の文化は現代まで受け継がれ、現存する能舞台では今でも盛んに能が行われています。</p>
+					<img src="tinified2/iwakubi-festival.png" class="festival" alt="岩首祭り">
+					<img src="img/east-japan.png" class="map" alt="東日本地図">
+					<div class="clear"></div>
+				</section>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="tinified/oshikawa5.png">
+				<div class="parallax-copyright">©  2016  Tsuyoshi  Oshikawa</div>
+			</div>
+			<div id="culture" class="wrapper">
+				<div class="container">
+					<section class="explanation">
+						<h2 class="explanation-title">文化</h2>
+						<p class="explanation-text">奈良時代以降、流刑となった人々は佐渡へ送られ、佐渡の文化形成に大きな影響を与えました。特に日蓮聖人、世阿弥などによってもたらされた能や文弥人形、のろま人形などの伝統芸能は、現代にまで受け継がれています。それらの伝統芸能は島の人々により祭事などの場で上演されるなど、佐渡の人々に愛されています。江戸時代に入ると佐渡は徳川幕府の直轄地となり、金の採掘で栄えます。佐渡金山における金の採掘の歴史は16世紀末にまで遡り、平成元年に採掘量の減少により中止されるまでの約400年の間、採掘がおこなわれました。江戸時代には佐渡金山で採掘された金は徳川幕府へと上納され、佐渡金山は国内最大の金銀山として徳川幕府の財政基盤を支える重要な役割を果たしました。現在は世界遺産登録に向けた取り組みがおこなわれています。</p>
+					</section>
+					<div class="culture-item">
+						<section class="kinzan-box">
+							<h3>佐渡金山</h3>
+							<p>佐渡金山の採掘方法は「露天掘り」と呼ばれ、現在では山が頂上から二つに割れるように残っており、「道遊の割戸」と呼ばれています。江戸時代からの手掘りの坑道を見学することも可能で、坑道見学後には併設されている資料館で佐渡金山の歴史を学ぶこともできます。</p>
+						</section>
+						<img src="tinified3/kinzan.png" class="kinzanPhoto">
+					</div>
+					<div class="culture-item">
+						<section class="noh-box">
+							<h3>能</h3>
+							<p>世阿弥によって佐渡にもたらされた能は、その後佐渡奉行大久保長安によって島民の間に広まりました。現在佐渡には約30の能舞台が残っており、これは日本に現存する能舞台の3分の1を占めます。能の上演は夏に集中しておこなわれ、かがり火を焚いておこなう「薪能」も見所の一つとなっています。</p>
+						</section>
+						<img src="tinified3/noh.png" class="nohPhoto">
+					</div>
+					<div class="culture-item">
+						<section class="shukunegi-box">
+							<h3>宿根木</h3>
+							<p>江戸時代に西回り航路の寄港地として栄えた小木の宿根木集落。かつては廻船業や造船業などで賑わいをみせ、佐渡島内の富の3分の1が集まるとも言われました。屋根板の上に石を置いた「石置き木羽葦屋根」が見られ、情緒のある美しい街並みが保存されています。</p>
+						</section>
+						<img src="tinified3/shukunegi.png" class="shukunegiPhoto">
+					</div>
+				</div>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="tinified/oshikawa6.png">
+				<div class="parallax-copyright">©  2016  Tsuyoshi  Oshikawa</div>
+			</div>
+			<div id="nature" class="wrapper">
+				<div class="container">
+					<section class="explanation">
+						<h2 class="explanation-title">自然</h2>
+						<p class="explanation-text">佐渡島の北側には大佐渡山脈が連なり、島内最高峰1172mの金北山は佐渡の民話にも数多く登場します。北の大佐渡山脈と南の小佐渡山脈との間には国仲平野が広がり、佐渡の豊かな自然がもたらす豊富な水を利用し、コシヒカリの生産がおこなわれています。夏が過ぎると国仲平野は稲穂で黄金色に染まり、秋の到来を告げます。2008年にはトキの自然放鳥が開始され、現在では佐渡の空を舞うトキの姿を眺めることができます。また、佐渡は平成23年に世界農業遺産(GIAHS)に登録され、佐渡の豊かな生物多様性や、人と自然が共生する農業のあり方が注目されています。</p>
+					</section>
+					<p class="click-here"><i class="fa fa-hand-o-down"></i>&emsp;クリックすると説明が現れます&emsp;<i class="fa fa-hand-o-down"></i></p>
+					<div class="nature-contents">
+						<div class="item naturePhotoLeft">
+							<img class="naturePhoto leftTop" src="tinified3/sugi.png">
+							<img class="naturePhoto leftMiddle" src="tinified3/momijiyama.png">
+							<img class="naturePhoto leftBottom" src="tinified3/yajima-kyojima.png">
+						</div>
+						<div class="item natureMap">
+							<img src="img/nature-map4.png">
+							<i class="fa fa-flag fa1 fa-2x"></i>
+							<i class="fa fa-flag fa2 fa-2x"></i>
+							<i class="fa fa-flag fa3 fa-2x"></i>
+							<i class="fa fa-flag fa4 fa-2x"></i>
+							<i class="fa fa-flag fa5 fa-2x"></i>
+							<i class="fa fa-flag fa6 fa-2x"></i>
+						</div>
+						<div class="item naturePhotoRight">
+							<img class="naturePhoto rightTop" src="tinified3/kanzou.png">
+							<img class="naturePhoto rightMiddle" src="tinified3/toki.png">
+							<img class="naturePhoto rightBottom" src="tinified3/tanada.png">
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="nature-modal-wrapper nature-modal-wrapper-leftTop">
+				<h3 class="smart-name">大佐渡石名天然杉
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times times-smart"></i>
+					</div>
+				</h3>
+				<div class="modal modal-leftTop">
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times"></i>
+					</div>
+					<section class="modal-text modal-text-leftTop">
+						<h3>大佐渡石名天然杉</h3>
+						<p>大佐渡山脈の標高900m付近に生育する石名の天然杉。強い風によって異様な形に湾曲したその姿は圧巻です。約650mの遊歩道が整備されており、遊歩道の入り口までは車で行くことができます。</p>
+					</section>
+				</div>
+				<p class="smart-explanation">大佐渡山脈の標高900m付近に生育する石名の天然杉。強い風によって異様な形に湾曲したその姿は圧巻です。約650mの遊歩道が整備されており、遊歩道の入り口までは車で行くことができます。</p>
+			</div>
+			<div class="nature-modal-wrapper nature-modal-wrapper-leftMiddle">
+				<h3 class="smart-name">紅葉山公園
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times times-smart"></i>
+					</div>
+				</h3>
+				<div class="modal modal-leftMiddle">
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times"></i>
+					</div>
+					<section class="modal-text modal-text-leftMiddle">
+						<h3>紅葉山公園</h3>
+						<p>小佐渡の男神山、女神山には「紅葉山公園」があり、10月下旬頃から紅葉を楽しむことができます。毎年10月の最終日曜日には紅葉山まつりが開催されています。</p>
+					</section>
+				</div>
+				<p class="smart-explanation">小佐渡の男神山、女神山には「紅葉山公園」があり、10月下旬頃から紅葉を楽しむことができます。毎年10月の最終日曜日には紅葉山まつりが開催されています。</p>
+			</div>
+			<div class="nature-modal-wrapper nature-modal-wrapper-leftBottom">
+				<h3 class="smart-name">矢島・経島
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times times-smart"></i>
+					</div>
+				</h3>
+				<div class="modal modal-leftBottom">
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times"></i>
+					</div>
+					<section class="modal-text modal-text-leftBottom">
+						<h3>矢島・経島</h3>
+						<p>矢島・経島の２つの小島を繋ぐのが朱色の太鼓橋。矢島体験交流館では、ワカメやアワビ漁に使用されるたらい舟を体験することができ、透き通った佐渡の海を楽しめる名所となっています。</p>
+					</section>
+				</div>
+				<p class="smart-explanation">矢島・経島の２つの小島を繋ぐのが朱色の太鼓橋。矢島体験交流館では、ワカメやアワビ漁に使用されるたらい舟を体験することができ、透き通った佐渡の海を楽しめる名所となっている。</p>
+			</div>
+			<div class="nature-modal-wrapper nature-modal-wrapper-rightTop">
+				<h3 class="smart-name">大野亀のトビシマカンゾウ
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times times-smart"></i>
+					</div>
+				</h3>
+				<div class="modal modal-rightTop">
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times"></i>
+					</div>
+					<section class="modal-text modal-text-rightTop">
+						<h3>大野亀のトビシマカンゾウ</h3>
+						<p>佐渡の最北端付近に位置するのは巨大な一枚岩である大野亀。その大野亀の周囲一帯は日本一のトビシマカンゾウの群生地が広がり、6月上旬から中旬にかけて見頃を迎えます。</p>
+					</section>
+				</div>
+				<p class="smart-explanation">佐渡の最北端付近に位置するのは巨大な一枚岩である大野亀。その大野亀の周囲一帯は日本一のトビシマカンゾウの群生地が広がり、6月上旬から中旬にかけて見頃を迎えます。</p>
+			</div>
+			<div class="nature-modal-wrapper nature-modal-wrapper-rightMiddle">
+				<h3 class="smart-name">トキ
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times times-smart"></i>
+					</div>
+				</h3>
+				<div class="modal modal-rightMiddle">
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times"></i>
+					</div>
+					<section class="modal-text modal-text-rightMiddle">
+						<h3>トキ</h3>
+						<p>今や佐渡のシンボルとなったトキ。2008年にトキの自然放鳥が開始され、現在ではおよそ200羽のトキが島内に生息しています。トキ保護センターが新穂長畝にあり、トキの姿を見学できます。</p>
+					</section>
+				</div>
+				<p class="smart-explanation">今や佐渡のシンボルとなったトキ。2008年にトキの自然放鳥が開始され、現在ではおよそ200羽のトキが島内に生息しています。トキ保護センターが新穂長畝にあり、トキの姿を見学できます。</p>
+			</div>
+			<div class="nature-modal-wrapper nature-modal-wrapper-rightBottom">
+				<h3 class="smart-name">岩首昇竜棚田
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times times-smart"></i>
+					</div>
+				</h3>
+				<div class="modal modal-rightBottom">
+					<div class="close-modal">
+						<i class="fa fa-2x fa-times"></i>
+					</div>
+					<section class="modal-text modal-text-rightBottom">
+						<h3>岩首昇竜棚田</h3>
+						<p>岩首集落から標高350mほどの山間部に広がる棚田。農業機械が入り込めないため、作業は今も人手によっておこなわれています。佐渡の世界農業遺産登録の象徴とも言えます。</p>
+					</section>
+				</div>
+				<p class="smart-explanation">岩首集落から標高350mほどの山間部に広がる棚田。農業機械が入り込めないため、作業は今も人手によっておこなわれています。佐渡の世界農業遺産登録の象徴とも言えます。</p>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="tinified/oshikawa7.png">
+				<div class="parallax-copyright">
+					©  2016  Tsuyoshi  Oshikawa
+				</div>
+			</div>
+			<div id="food" class="wrapper">
+				<div class="container">
+					<section class="explanation">
+						<h2 class="explanation-title">食</h2>
+						<p class="explanation-text">佐渡沖では北からの寒流と南からの暖流が交差するため、実に多種多様な魚介類が水揚げされます。佐渡の海産物といえばスルメイカ、ズワイガニ、サザエ、ブリ、本マグロ、トビウオ、アワビなどが挙げられ、季節ごとに異なる種類の海産物を楽しむことができます。また、佐渡は本土よりも夏は涼しく冬は暖かい気候であり、寒帯地方と熱帯地方の両方の植生が見られることが特徴です。そうした環境下において、日本有数のブランド米として名高い佐渡産コシヒカリや、しいたけ、おけさ柿、ルレクチェ、ビオレ・ソリエス(黒いちじく)など実に幅広い農産物の生産が行われています。毎年3月に開催される「佐渡食の陣」では、島内各地から集まる佐渡のグルメを楽しむことができます。</p>
+						<p class="click-here click-text-change"><i class="fa fa-hand-o-down"></i>&emsp;マウスを乗せると説明が現れます&emsp;<i class="fa fa-hand-o-down"></i></p>
+					</section>
+				</div>
+				<div class="foodPhotos">
+					<div class="food igoneri">
+						<section class="mask mask-igoneri">
+							<h3>いごねり</h3>
+							<p>佐渡産のエゴ草を煮詰めて濾した後に固め、麺状に切って食べる郷土料理。ネギや生姜などの薬味を乗せて、醤油やポン酢などで食べるのが美味。北前船によって九州地方から伝わったという説が有力。</p>
+						</section>
+					</div>
+					<div class="food okesakaki">
+						<section class="mask mask-okesakaki">
+							<h3>おけさ柿</h3>
+							<p>佐渡の民謡である「佐渡おけさ」から名付けられ、「八珍柿」とも呼ばれる。温暖な気候である小佐渡で生産されており、焼酎を使用した渋抜きを経て出荷され、とろけるような食感と種がないのが特徴。濃厚な甘さが人気を博す。</p>
+						</section>
+					</div>
+					<div class="food sake">
+						<section class="mask mask-sake">
+							<h3>日本酒</h3>
+							<p>佐渡の良質な米と、豊かな自然がもたらす水が生み出す極上の日本酒。現在佐渡には６つの蔵元があり、それぞれが特徴を生かした酒造りを行なっている。国際線の機内酒として提供されるなど、世界からも注目が集まる。</p>
+						</section>
+					</div>
+					<div class="food burikatsu">
+						<section class="mask mask-burikatsu">
+							<h3>佐渡天然ブリカツ丼</h3>
+							<p>降雪を知らせる寒波が到来する頃に北から南下してきたブリが網に入り、これを「ブリ起こし」と呼ぶ。ブリカツ丼はブリを地場産米粉で揚げ、あごだし醤油ダレにつけてご飯に乗せたもの。「ブリカツくん」がマスコットキャラクター。</p>
+						</section>
+					</div>
+					<div class="food kani">
+						<section class="mask mask-kani">
+							<h3>ズワイガニ</h3>
+							<p>10月〜3月に水揚げされ、佐渡沖ではベニズワイガニ、ズワイガニ、毛ガニが獲れる。佐渡では手頃な値段で手に入り、佐渡の海洋深層水で１週間ほど短期蓄積されたカニは身が締まり、人気が高い。冬の佐渡を訪れる際には欠かせない食材。</p>
+						</section>
+					</div>
+					<div class="food sea-kaki">
+						<section class="mask mask-sea-kaki">
+							<h3>牡蠣</h3>
+							<p>加茂湖と真野湾で養殖が行われ、冬が旬。栄養素が豊富で、「海のミルク」とも呼ばれる。焼き牡蠣や牡蠣フライにしても美味しいが、蒸して食べる「ガンガン焼き」も人気。加茂湖の湖畔には牡蠣小屋が並び、趣のある風景が見られる。</p>
+						</section>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="tinified/oshikawa12.png">
+				<div class="parallax-copyright">
+					©  2016  Tsuyoshi  Oshikawa
+				</div>
+			</div>
+			<div id="access" class="wrapper">
+				<div class="container">
+					<div class="explanation">
+						<h2 class="explanation-title">アクセス</h2>
+						<p class="explanation-text">新潟本土から佐渡島へは、佐渡汽船株式会社が運営するカーフェリーまたはジェットフォイルを利用し、３つの航路からアクセスが可能です。季節によって船のダイヤは変動致しますので、必ず佐渡汽船株式会社が運営するホームページから最新の情報をご確認ください。ホームページへは下のリンクからアクセスできます。また、冬場は海が荒れやすく、欠航になることがございますのでご留意ください。</p>
+					</div>
+					<div class="accessContents">
+						<section class="contentsLeft">
+							<h3>時刻表(2017年2月)</h3>
+							<div class="route">新潟〜両津航路　カーフェリー<span class="fa fa-chevron-circle-down"></span></div>
+							<div class="time-table">
+								<table border="1">
+									<tr>
+										<td>期間</td>
+										<td>新潟港→両津港</td>
+										<td>両津港→新潟港</td>
+									</tr>
+									<tr>
+										<td rowspan="5">平成29年2月1日<br>〜2月28日</td>
+										<td>06:00→08:30</td>
+										<td>05:30→08:00</td>
+									</tr>
+									<tr>
+										<td>09:20→11:50</td>
+										<td>09:15→11:45</td>
+									</tr>
+									<tr>
+										<td>12:35→15:05</td>
+										<td>12:40→15:10</td>
+									</tr>
+									<tr>
+										<td>16:00→18:30</td>
+										<td>16:05→18:35</td>
+									</tr>
+									<tr>
+										<td>19:30→22:00</td>
+										<td>19:30→22:00</td>
+									</tr>
+								</table>
+							</div>
+							<div class="route">新潟〜両津航路　ジェットフォイル<span class="fa fa-chevron-circle-down"></span></div>
+							<div class="time-table">
+								<table border="1" class="ryotsu-jet">
+									<tr>
+										<td>期間</td>
+										<td>新潟港→両津港</td>
+										<td>両津港→新潟港</td>
+									</tr>
+									<tr>
+										<td rowspan="6">平成29年2月1日<br>〜2月28日</td>
+										<td>07:55→09:00</td>
+										<td>07:20→08:25</td>
+									</tr>
+									<tr>
+										<td>09:40→10:45</td>
+										<td>09:25→10:30</td>
+									</tr>
+									<tr>
+										<td>11:30→12:35</td>
+										<td>11:15→12:20</td>
+									</tr>
+									<tr>
+										<td>13:45→14:50</td>
+										<td>13:20→14:25</td>
+									</tr>
+									<tr>
+										<td>※15:55→17:00</td>
+										<td>※16:00→17:05</td>
+									</tr>
+									<tr>
+										<td>◎16:25→17:30</td>
+										<td>◎16:25→17:30</td>
+									</tr>
+								</table>
+								<p class="special-schedule">※印 2/1〜12 運航</p>
+								<p class="special-schedule">◎印 2/13〜28 運航</p>
+							</div>
+							<div class="route">寺泊〜赤泊航路　高速カーフェリー<span class="fa fa-chevron-circle-down"></span></div>
+							<div class="time-table time-table-akadomari">
+								<table border="1" class="akadomari">
+									<tr>
+										<td colspan="2">平成29年2月1日〜2月28日</td>
+									</tr>
+									<tr>
+										<td>寺泊港→赤泊港</td>
+										<td>赤泊港→寺泊港</td>
+									</tr>
+									<tr>
+										<td>運休</td>
+										<td>運休</td>
+									</tr>
+								</table>
+							</div>
+							<div class="route">直江津〜小木航路　カーフェリー<span class="fa fa-chevron-circle-down"></span></div>
+							<div class="time-table time-table-ogi">
+								<table border="1" class="ogi">
+									<tr>
+										<td colspan="2">平成29年2月1日〜2月28日</td>
+									</tr>
+									<tr>
+										<td>直江津港→小木港</td>
+										<td>小木港→直江津港</td>
+									</tr>
+									<tr>
+										<td>運休</td>
+										<td>運休</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<div class="contentsRight">
+							<img src="img/access-map.png" class="access-map">
+							<a href="http://www.sadokisen.co.jp/" target="_blank"><img src="img/sadokisenLink.gif" class="link"></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="tinified/oshikawa9.png">
+				<div class="parallax-copyright">©  2016  Tsuyoshi  Oshikawa</div>
+			</div>
+			<div id="question" class="question-wrapper wrapper">
+				<div class="question-container container">
+					<section class="question-left explanation">
+						<h2 class="explanation-title">お問い合わせ</h2>
+						<p class="explanation-text">佐渡観光についてお困りのことやご不明な点がございましたら、右のフォームからご質問ください。「こういう旅がしたい」「佐渡でこれできないかな？」などのリクエストにもお答えしております。お気軽にお問い合わせください。</p>
+					</section>
+					<form class="form">
+						<input type="text" name="name" placeholder="お名前" class="formItem">
+						<input type="text" name="address" placeholder="メールアドレス" class="formItem">
+						<textarea name="question" rows="10" placeholder="お問い合わせ内容をご記入ください" class="formItem"></textarea>
+						<div class="btn">
+							<div class="formItem submit">送信</div>
+							<div class="formItem">リセット</div>
+						</div>
+					</form>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</main>
+		<footer id="footer" class="parallax-window" data-parallax="scroll" data-image-src="tinified/oshikawa10.png">
+			<p class="footer-container">
+				© 2017 Produced by Tasuku Watanabe
+			</p>
+		</footer>
+	</div>
+	<script src="https://use.fontawesome.com/3123d9305f.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
