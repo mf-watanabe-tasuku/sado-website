@@ -23,7 +23,7 @@ h1, h2, h3 {
 
 .wrapper {
 	width: 100%;
-	background-image: url("../tinified2/tesukiwashi-pattern-08.jpg");
+	background-image: url("../img/tesukiwashi-pattern-08.jpg");
 	background-size: 300px;
 	background-position: center;
 }
@@ -67,27 +67,27 @@ h1, h2, h3 {
 }
 
 .slide0 {
-	background-image: url(../tinified/oshikawa4.png);
+	background-image: url(../img/oshikawa4.png);
 	/*background-color: red;*/
 }
 
 .slide1 {
-	background-image: url(../tinified/oshikawa1.jpg);
+	background-image: url(../img/oshikawa1.jpg);
 	/*background-color: orange;*/
 }
 
 .slide2 {
-	background-image: url(../tinified/oshikawa2.png);
+	background-image: url(../img/oshikawa2.png);
 	/*background-color: yellow;*/
 }
 
 .slide3 {
-	background-image: url(../tinified/oshikawa3.png);
+	background-image: url(../img/oshikawa3.png);
 	/*background-color: green;*/
 }
 
 .slide4 {
-	background-image: url(../tinified/oshikawa0.png);
+	background-image: url(../img/oshikawa0.png);
 	/*background-color: blue;*/
 }
 .header-copyright {
@@ -147,7 +147,7 @@ h1, h2, h3 {
 /*  ---------------nav----------------------*/
 .nav-wrapper {
 	width: 100%;
-	background-image: url(../tinified2/japanese-paper1.jpg);
+	background-image: url(../img/japanese-paper1.jpg);
 	background-size: 500px;
 	background-position: center;
 	box-shadow: 0px 1px 4px 0px #646464;
@@ -485,27 +485,27 @@ h1, h2, h3 {
 }
 
 .modal-leftTop {
-	background-image: url("../tinified3/sugi.png");
+	background-image: url("../img/sugi.png");
 }
 
 .modal-leftMiddle {
-	background-image: url("../tinified3/momijiyama.png");
+	background-image: url("../img/momijiyama.png");
 }
 
 .modal-leftBottom {
-	background-image: url("../tinified3/yajima-kyojima.png");
+	background-image: url("../img/yajima-kyojima.png");
 }
 
 .modal-rightTop {
-	background-image: url("../tinified3/kanzou.png");
+	background-image: url("../img/kanzou.png");
 }
 
 .modal-rightMiddle {
-	background-image: url("../tinified3/toki.png");
+	background-image: url("../img/toki.png");
 }
 
 .modal-rightBottom {
-	background-image: url("../tinified3/tanada.png");
+	background-image: url("../img/tanada.png");
 }
 
 .modal-text {
@@ -631,27 +631,27 @@ h1, h2, h3 {
 }
 
 .igoneri {
-	background-image: url("../tinified3/igoneri-round.png");
+	background-image: url("../img/igoneri-round.png");
 }
 
 .okesakaki {
-	background-image: url("../tinified3/okesakaki-round.png");
+	background-image: url("../img/okesakaki-round.png");
 }
 
 .sake {
-	background-image: url("../tinified3/sake-round.png");
+	background-image: url("../img/sake-round.png");
 }
 
 .burikatsu {
-	background-image: url("../tinified3/burikatsu-round.png");
+	background-image: url("../img/burikatsu-round.png");
 }
 
 .kani {
-	background-image: url("../tinified3/kani-round.png");
+	background-image: url("../img/kani-round.png");
 }
 
 .sea-kaki {
-	background-image: url("../tinified3/kaki-round.png");
+	background-image: url("../img/kaki-round.png");
 }
 
 .mask {
@@ -802,7 +802,7 @@ table {
 /*---------------------お問い合わせ----------------------*/
 
 .question-wrapper {
-	background-image: url(../tinified2/japanese-paper3.jpg);
+	background-image: url(../img/japanese-paper3.jpg);
 }
 
 .question-left {
