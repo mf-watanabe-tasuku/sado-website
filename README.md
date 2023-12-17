@@ -3,4 +3,4 @@
 2017年2月に初めて私が自分で制作したウェブサイトです。
 自分自身の原点として、現在も無料公開しています。
 
-[佐渡島観光サイト](https://sado-website.herokuapp.com/)
+[佐渡島観光サイト](https://sado-website.onrender.com/)
